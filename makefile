@@ -4,10 +4,9 @@ LINES = $(shell wc -l < guessinggame.sh)
 all: README.md 
 
 README.md:
-	echo "Title of Project: Guessing Game." > README.md
-	echo "\n"
+	echo "Title of Project: Guessing Game.\n" > README.md
 	echo "Date and time make was run:" $(DATETIME) >> README.md
-	echo "\n" 
+	echo "\n" >> README.md
 	echo "Number of lines of code in guessinggame.sh:" $(LINES) >> README.md
 
 
